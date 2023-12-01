@@ -10,7 +10,7 @@ function Main() {
   useEffect(() => {
     async function initializeLDProvider() {
       const provider = await asyncWithLDProvider({
-        clientSideID: import.meta.env.VITE_NEXT_PUBLIC_LD_CLIENT_KEY || "",
+        clientSideID: import.meta.env.VITE_LD_CLIENT_KEY || "",
         reactOptions: {
           useCamelCaseFlagKeys: false,
         },
